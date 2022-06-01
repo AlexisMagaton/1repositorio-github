@@ -1,0 +1,557 @@
+/*afecta pagina index.html*/
+
+
+.contenedor{
+   
+   
+    /*gap: 2rem;*/
+    grid-template-rows:12% 5% auto 10%;
+    grid-template-columns:75% 25%;
+    grid-template-areas: " encab encab  "
+                         "nav nav"
+                         "section  aside"
+                         "pieI  pieI";
+   display: grid;
+   height: 100 vh;
+   
+                        }
+
+ 
+ 
+ 
+ head{     
+    
+   
+    grid-area: encab;
+    line-height: 1.2;
+    
+    
+}
+   
+
+ 
+   .titulo{ 
+      width: 133%;
+    padding: 2px;
+    margin: 0%;
+    height: 100%;
+    background: linear-gradient(to bottom, dimgray, white); 
+    font-family: 'Water Brush', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1.25rem;
+    color: rgba(196, 218, 6, 0.904);
+     -webkit-text-stroke: 0.5px black;
+     
+   
+    
+    
+    
+}
+
+.nombrePagina{
+height: 100%;
+font-size: 75%;
+text-align: left;
+font-family: 'Water Brush', cursive;
+width: 100%;
+padding-left: 1.25rem;
+}   
+     
+     
+
+
+ Nav{
+     grid-area: nav;
+     background-color:black;
+     
+ }
+.MenuNav{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+   
+
+}
+
+.boton{
+    border-radius: 15px;
+    width: 14em;
+    
+
+}
+
+.boton:hover{
+    background-color: rgb(49, 47, 47);
+    transform: scale(1.5);
+  }
+
+
+
+.botones{  
+   
+    text-decoration: none;
+    border-radius: 20px; 
+    color: gray;
+    font-size: x-large;
+    font-family: "Water Brush";
+}
+.botones:hover{
+    color: aliceblue;
+}
+
+
+ section{
+     grid-area: section;
+ }
+
+
+
+
+
+
+ aside{
+     grid-area: aside;
+   
+ }
+
+ .asideSuscripcion{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgrey;
+    height: 100%;
+    background: radial-gradient(black, white );
+ }
+
+.asideSuscripcion h2{ 
+        text-align: center;
+        margin-top: 0px;
+        background-color: grey;
+        width: 100%;
+        height: 2em;
+        
+}
+
+.asideSuscripcion label{
+        font-weight: bolder;
+        margin-top: 2em;
+       
+}  
+
+.asideSuscripcion input{
+    width: 20em;
+    font-weight: bolder;
+    border-radius: 5px;
+}    
+
+.suslim{display: flex;
+    width: 70%;
+    margin-top: 3em;
+    
+    justify-content: space-between;
+
+}
+
+
+ footer{
+     grid-area: pieI;
+    text-align: center;
+    font-weight: bolder
+    
+ }
+
+
+
+ .redes{
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    display: flex;
+     list-style: none;
+     justify-content: space-around;
+     align-content: center;
+     background-color: darkgray;
+     height: 7em;
+     padding-top: 2em;
+     width: 100%;
+    }
+.derechos{
+  
+   background: linear-gradient(to bottom, dimgray, white);
+   height: 3em;
+   padding: 1em;
+   margin: 0px;
+}    
+
+
+
+/* comienca estilo para pagina nuestrosTrabajos.html***************************************************/
+
+
+
+
+.contenedorNT{
+   
+    display: grid;
+    min-height: 100vh;
+    
+    /*gap: 2rem;*/
+    grid-template-rows:15% 5% 4% 25rem 25rem auto;
+    grid-template-columns:50% 50%;
+    grid-template-areas: "titulo  titulo "
+                         "menuN  menuN"
+                         "sect  sect"
+                         "sec1  sec2 "
+                         "sec3  sec4"
+                         "pie  pie";
+  
+ 
+                      }
+ 
+  
+  
+  
+  .tPrincipal{
+     grid-area: titulo;
+   
+    
+     
+     line-height: 1.2;
+     color: rgba(196, 218, 6, 0.904);
+     -webkit-text-stroke: 0.5px black;
+     background: linear-gradient(to bottom, dimgray, white);
+ 
+     width:100%;
+         
+     font-family: 'Water Brush', cursive;
+     font-size: 3rem;
+     text-align: center;
+     font-weight: bolder;
+     line-height: 1.25rem;
+     display:block;
+ 
+  } 
+ 
+ .s{
+    grid-area: sect;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(131, 79, 15);
+    
+
+ }
+ 
+
+ 
+ 
+ 
+ 
+.MenuNavNT{
+    grid-area: menuN;
+    background-color:black;
+   
+ }
+ 
+ @keyframes bgColor {
+   from { background-color: lightslategrey;}
+   to { background-color:red;}
+   
+ }
+
+.contMedia{
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    
+}
+ .s1{
+    grid-area: sec1;
+    border:ridge black 2px;
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+ 
+   }   
+ 
+.s1:hover{
+   animation-name: bgColor;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+
+}
+
+
+ .s2{
+    
+    border:ridge black 2px;
+    grid-area: sec2;
+    
+    background-color: lightslategrey;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ 
+ 
+ .s2:hover{
+   animation-name: bgColor;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+ }
+ 
+ 
+ .s3{
+    grid-area: sec3;
+    border:ridge black 2px;
+    background-color: lightslategrey;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    
+   
+ }
+ 
+
+ .s3:hover{
+   animation-name: bgColor;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+ }
+
+ .s4{
+    border:ridge black 2px;
+    grid-area: sec4;
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+ }
+ 
+ .s4:hover{
+   animation-name: bgColor;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+ }
+ 
+ 
+ 
+ 
+ .footerNT{
+    grid-area: pie;
+   
+    background-color: dimgray;
+   
+
+ }
+ 
+ .redesNT{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-content: center;
+ 
+
+
+
+ }  
+ 
+
+
+
+
+ .nombrePagina{
+     
+    font-size: 100%;
+    text-align: left;
+    font-family: 'Water Brush', cursive;
+    width: 100%;
+    padding-left: 1.25rem;
+    }    
+ 
+    
+ .boton{
+     
+   
+    border-radius: 10px; 
+    color:rgb(255, 0, 0);
+    font-size: x-large;
+    font-family: "Water Brush";
+    
+    width: 10rem;
+    height: 2rem;
+  
+ }
+ 
+ .padre{
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+ }
+ 
+    .derechos{               /*footer*/
+       font-weight: bold;
+       width: 100%;
+       background-color: dimgray;
+       
+       
+       text-align: center;
+   }
+
+.LinkHomeNT{display: none;}
+
+
+
+
+
+@media screen and (max-width: 320px)
+{
+
+/*Afecta a la pagina index.html*/    
+
+*.contenedor{
+   display: grid;
+   grid-template-rows: 13% auto 18%;
+   grid-template-columns:  100% ;
+   grid-template-areas: "  header "
+                        "  nav "
+                        "  footer  ";
+
+}
+
+.titulo{
+   overflow: auto;
+   grid-area: header;
+   display: flex;
+   width: 100%;
+   font-size: 70%;
+   justify-content: center;
+}
+
+div .MenuNav{
+   margin-left: auto;
+   margin-right: auto;
+   align-content: space-around;
+   justify-content: center;
+   padding-left: 1em;
+   padding-left:  2em;
+   padding-right: 2em;
+   display: block;
+   height: 100%;
+}
+
+
+.botonesI{height: 60px;
+            width: 60px;}
+
+
+.redes img{width: 40%;
+           height: 40%;
+           border-top: 0px;
+           border-bottom: 2em;   
+            padding-bottom: 2em;}
+
+
+footer{
+   display: flex;
+   grid-area: footer;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+.nombrePagina{display: none;}
+.mainFoto{display: none;}
+aside{display: none;}
+
+
+
+/*afecta a la pagina nuestrosTrabajos.html*/
+
+.contenedorNT{
+   
+        display: grid;
+        
+        grid-template-rows:auto auto auto auto auto auto auto;
+        grid-template-columns: 320px;
+        grid-template-areas: "header"
+                             "media1 "
+                             "media2"
+                             "media3"
+                             "media4"
+                             "home";
+       }
+
+       .tPrincipal{
+      
+        grid-area: header;
+      padding: auto;
+         font-size: 50%;
+   }
+
+
+
+
+    .s{display: none;} 
+    .MenuNavNT{display: none;}
+    .mediaNt{
+      display: block;
+      width: 320px;
+      height: 388px;
+    }
+    
+    .s1{
+        
+        
+        grid-area: media1;
+        overflow: auto;
+    }
+
+    .mediaNt{display: flex;
+      flex-direction: row;
+   
+   }
+
+
+    .s2{grid-area: media2;
+         
+        
+
+    }
+
+
+    .s3{grid-area: media3;
+      overflow: auto;
+    }
+
+    .s4{grid-area: media4;
+      overflow: auto;
+    }
+
+    .s5{grid-area: home;
+display: block;
+
+    }
+.derechos{display: none;}
+ .redesNT{display: none;}   
+
+  
+.LinkHomeNT{display: flex;
+    width: 5rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+}  
+
+}
